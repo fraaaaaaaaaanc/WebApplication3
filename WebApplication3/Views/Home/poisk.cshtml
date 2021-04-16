@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Search</title>
+</head>
+<body>
+
+    <section>
+        <div class="search">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#">Найти</a></li>
+                    <li><a href="../registration/registration.html">Регистрация</a></li>
+                </ul>
+                <h1>Поиск</h1>
+                <div class="search-wrapper">
+                    <div class="change">
+                        <ul class="list-group">
+                            <div class="select">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Жанры</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <input type="text" class="form-control" placeholder="Автор" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+                            <div class="range">
+                                <label for="customRange3" class="form-label">Рейтинг</label>
+                                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="spisok">
+                        <div class="input-group mb-3" style="margin-top: 10px; padding: 10px;">
+                            <input type="text" class="form-control" placeholder="Искать Книгу" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-info" type="button" id="button-addon2">Найти</button>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="~/js/poisk.js"></script>
+</html>
